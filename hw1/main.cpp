@@ -81,10 +81,9 @@ int main()
     x++;
     bmpNew.set_pixel(x+800, y+400, 255, 255, 255, 0);
     bmpNew.set_pixel(-x+800, y+400, 255, 255, 255, 0);//-x,y
-    bmpNew.set_pixel(-x+800, -y+400, 255, 255, 255, 0);//-x-y
-    bmpNew.set_pixel(x+800,-y+400, 255, 255, 255, 0);//x-y
+
   }
-  std::cout << x << y << std::endl;
+ 
   d= bSquared*((x+0.5f)*(x+0.5f)) + aSquared *((y-1)*(y-1)) - aSquared*bSquared;
   while( y >= 0)
   {
@@ -101,8 +100,7 @@ int main()
     
     bmpNew.set_pixel(x+800, y+400, 255, 255, 255, 0);
     bmpNew.set_pixel(-x+800, y+400, 255, 255, 255, 0);//-x,y
-    bmpNew.set_pixel(-x+800, -y+400, 255, 255, 255, 0);//-x-y
-    bmpNew.set_pixel(x+800,-y+400, 255, 255, 255, 0);//x-y
+
   }
 
 
